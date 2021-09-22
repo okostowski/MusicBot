@@ -28,12 +28,12 @@ import net.dv8tion.jda.api.entities.User;
  *
  * @author John Grosh <john.a.grosh@gmail.com>
  */
-public class RemoveCmd extends MusicCommand 
+public class VoteRemoveCmd extends MusicCommand
 {
-    public RemoveCmd(Bot bot)
+    public VoteRemoveCmd(Bot bot)
     {
         super(bot);
-        this.name = "remove";
+        this.name = "voteremove";
         this.help = "removes a song from the queue";
         this.arguments = "<position|ALL>";
         this.aliases = bot.getConfig().getAliases(this.name);

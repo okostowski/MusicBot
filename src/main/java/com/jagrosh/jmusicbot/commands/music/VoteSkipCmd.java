@@ -26,12 +26,12 @@ import net.dv8tion.jda.api.entities.User;
  *
  * @author John Grosh <john.a.grosh@gmail.com>
  */
-public class SkipCmd extends MusicCommand 
+public class VoteSkipCmd extends MusicCommand
 {
-    public SkipCmd(Bot bot)
+    public VoteSkipCmd(Bot bot)
     {
         super(bot);
-        this.name = "skip";
+        this.name = "voteskip";
         this.help = "votes to skip the current song";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.beListening = true;

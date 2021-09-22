@@ -32,12 +32,12 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Michaili K.
  */
-public class ForceRemoveCmd extends DJCommand
+public class RemoveCmd extends DJCommand
 {
-    public ForceRemoveCmd(Bot bot)
+    public RemoveCmd(Bot bot)
     {
         super(bot);
-        this.name = "forceremove";
+        this.name = "remove";
         this.help = "removes all entries by a user from the queue";
         this.arguments = "<user>";
         this.aliases = bot.getConfig().getAliases(this.name);

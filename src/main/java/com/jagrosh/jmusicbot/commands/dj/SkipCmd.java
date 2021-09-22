@@ -26,12 +26,12 @@ import net.dv8tion.jda.api.entities.User;
  *
  * @author John Grosh <john.a.grosh@gmail.com>
  */
-public class ForceskipCmd extends DJCommand 
+public class SkipCmd extends DJCommand
 {
-    public ForceskipCmd(Bot bot)
+    public SkipCmd(Bot bot)
     {
         super(bot);
-        this.name = "forceskip";
+        this.name = "skip";
         this.help = "skips the current song";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.bePlaying = true;
